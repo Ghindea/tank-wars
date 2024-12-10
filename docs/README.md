@@ -10,7 +10,7 @@ It is currently used as teaching and study material for a number of courses of i
 
 The functionality is split into several modules of increasing difficulty (`m1`, `m2`, etc.).
 
-You can read more about it [in the docs](docs/home.md).
+You can read more about it [in the docs](home.md).
 
 It has missing and closed-source functionality that you will need to implement.
 
