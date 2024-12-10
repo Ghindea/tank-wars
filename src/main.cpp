@@ -5,30 +5,38 @@
 #include "components/simple_scene.h"
 
 #if defined(WITH_LAB_M1)
-#   include "main.h"
+#   include "lab_m1/lab_list.h"
 #endif
+
+// #if defined(WITH_LAB_M2)
+// #   include "lab_m2/lab_list.h"
+// #endif
+
+// #if defined(WITH_LAB_EXTRA)
+// #   include "lab_extra/lab_list.h"
+// #endif
 
 
 #ifdef _WIN32
-    PREFER_DISCRETE_GPU_NVIDIA;
-    PREFER_DISCRETE_GPU_AMD;
+PREFER_DISCRETE_GPU_NVIDIA;
+PREFER_DISCRETE_GPU_AMD;
 #endif
 
 
-std::string GetParentDir(const std::string &filePath)
+std::string GetParentDir(const std::string& filePath)
 {
     size_t pos = filePath.find_last_of("\\/");
     return (std::string::npos == pos) ? "." : filePath.substr(0, pos);
 }
 
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
     srand((unsigned int)time(NULL));
 
     // Create a window property structure
     WindowProperties wp;
-    wp.resolution = glm::ivec2(1920, 1080);
+    wp.resolution = glm::ivec2(1980, 1080);
     wp.vSync = true;
     wp.selfDir = GetParentDir(std::string(argv[0]));
 
@@ -36,7 +44,9 @@ int main(int argc, char **argv)
     (void)Engine::Init(wp);
 
     // Create a new 3D world and start running it
-    World *world = new m1::tankWars();
+    //World* world = new m1::Lab7();
+    World* world = new m1::tankWars();
+
 
     world->Init();
     world->Run();

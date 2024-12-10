@@ -8,7 +8,7 @@ endif()
 
 
 # Set the name of the project
-set(target_name TankWars)
+set(target_name GFXFramework)
 project(${target_name} C CXX)
 
 
@@ -62,7 +62,7 @@ endif()
 # empty, the GLOB_RECURSE will look for files in the directory called `lab_`
 # which does not actually exist, but will not fail.
 if (WITH_LAB_M1)
-    set("m1")
+    set(SUFFIX_LAB_M1 "m1")
 endif()
 if (WITH_LAB_M2)
     set(SUFFIX_LAB_M2 "m2")
@@ -80,7 +80,9 @@ file(GLOB_RECURSE GFXF_SOURCES
     #
     ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp
     #
-    ${CMAKE_CURRENT_LIST_DIR}/src/tankWars/*.c*
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_M1}/*.c*
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_M2}/*.c*
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_EXTRA}/*.c*
 )
 
 
@@ -92,9 +94,13 @@ file(GLOB_RECURSE GFXF_HEADERS_PRIVATE
     #
     ${CMAKE_CURRENT_LIST_DIR}/res/*.glsl
     #
-    ${CMAKE_CURRENT_LIST_DIR}/src/tankWars/*.h*
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_M1}/*.h*
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_M2}/*.h*
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_EXTRA}/*.h*
     #
-    ${CMAKE_CURRENT_LIST_DIR}/src/tankWars/*.glsl
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_M1}/*.glsl
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_M2}/*.glsl
+    ${CMAKE_CURRENT_LIST_DIR}/src/lab_${SUFFIX_LAB_EXTRA}/*.glsl
 )
 
 
@@ -291,22 +297,22 @@ endif()
 # `cmake -E rm` and `cmake -E create_symlink` and avoid using OS-specific
 # commands. Unfortunately, `create_symlink` will fail if the user is not
 # an administrator of the device, as it uses `mklink /D` under the hood.
-# foreach (dir IN ITEMS "src" "assets")
-#     if (CMAKE_HOST_SYSTEM_NAME STREQUAL "Windows")
-#         string(REPLACE "/" "\\" __target_dir "${__target_dir}")
-#         string(REPLACE "/" "\\" GFXF_ROOT_DIR "${GFXF_ROOT_DIR}")
+foreach (dir IN ITEMS "src" "assets")
+    if (CMAKE_HOST_SYSTEM_NAME STREQUAL "Windows")
+        string(REPLACE "/" "\\" __target_dir "${__target_dir}")
+        string(REPLACE "/" "\\" GFXF_ROOT_DIR "${GFXF_ROOT_DIR}")
 
-#         add_custom_command(TARGET ${target_name} POST_BUILD
-#             COMMAND rmdir /S /Q "${__target_dir}\\${dir}" ${__error_sink}
-#             COMMAND mklink /J "${__target_dir}\\${dir}" "${GFXF_ROOT_DIR}\\${dir}" ${__error_sink}
-#         )
-#     else()
-#         add_custom_command(TARGET ${target_name} POST_BUILD
-#             COMMAND rm -rf "${__target_dir}/${dir}"
-#             COMMAND ln -s "${GFXF_ROOT_DIR}/${dir}" "${__target_dir}/${dir}"
-#         )
-#     endif()
-# endforeach()
+        add_custom_command(TARGET ${target_name} POST_BUILD
+            COMMAND rmdir /S /Q "${__target_dir}\\${dir}" ${__error_sink}
+            COMMAND mklink /J "${__target_dir}\\${dir}" "${GFXF_ROOT_DIR}\\${dir}" ${__error_sink}
+        )
+    else()
+        add_custom_command(TARGET ${target_name} POST_BUILD
+            COMMAND rm -rf "${__target_dir}/${dir}"
+            COMMAND ln -s "${GFXF_ROOT_DIR}/${dir}" "${__target_dir}/${dir}"
+        )
+    endif()
+endforeach()
 
 # For builds that are supplied with closed-source modules,
 # we copy those modules next to the target. If you already

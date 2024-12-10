@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GFXFramework"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\infra\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\assimp-5.0\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\spdlog\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GFXFramework">
+				<Option output="/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/bin/Debug/GFXFramework" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBGFXC_EXPORTS"/>
+					<Add option="-DGLM_FORCE_SILENT_WARNINGS"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DSOLVED"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DWITH_LAB_M1"/>
+					<Add directory="/mnt/d/Users/danie/egc/gfx-framework/deps/api"/>
+					<Add directory="/mnt/d/Users/danie/egc/gfx-framework/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 GFXFramework"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GFXFramework/fast">
+				<Option output="/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/bin/Debug/GFXFramework" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBGFXC_EXPORTS"/>
+					<Add option="-DGLM_FORCE_SILENT_WARNINGS"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DSOLVED"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DWITH_LAB_M1"/>
+					<Add directory="/mnt/d/Users/danie/egc/gfx-framework/deps/api"/>
+					<Add directory="/mnt/d/Users/danie/egc/gfx-framework/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 GFXFramework/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Users/danie/egc/gfx-framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/camera.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/camera_input.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/camera_input.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/exports.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/scene_input.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/scene_input.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/simple_scene.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/simple_scene.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/text_renderer.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/text_renderer.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/components/transform.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/engine.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/engine.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/frame_buffer.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/frame_buffer.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/gpu_buffers.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/gpu_buffers.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/mesh.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/mesh.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/particle_effect.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/shader.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/shader.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/ssbo.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/texture2D.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/texture2D.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/vertex_bone_data.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/gpu/vertex_format.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/managers/resource_path.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/managers/texture_manager.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/managers/texture_manager.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/window/input_controller.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/window/input_controller.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/window/window_callbacks.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/window/window_callbacks.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/window/window_object.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/window/window_object.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/world.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/core/world.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab1/lab1.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab1/lab1.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab2/lab2.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab2/lab2.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab3/lab3.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab3/lab3.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab3/lab3_vis2D.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab3/lab3_vis2D.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab3/object2D.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab3/object2D.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab3/transform2D.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab4/lab4.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab4/lab4.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab4/transform3D.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab5/lab5.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab5/lab5.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab5/lab_camera.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab6/lab6.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab6/lab6.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab6/shaders/FragmentShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab6/shaders/VertexShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab7/lab7.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab7/lab7.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab7/shaders/FragmentShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab7/shaders/VertexShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab8/lab8.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab8/lab8.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab8/shaders/FragmentShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab8/shaders/VertexShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab9/lab9.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab9/lab9.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab9/shaders/FragmentShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab9/shaders/VertexShader.glsl">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/lab_list.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/tankWars/elementConstructor.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/tankWars/elementConstructor.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/tankWars/movements.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/tankWars/tankWars.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/lab_m1/tankWars/tankWars.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/main.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/gl_utils.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/gl_utils.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/glm_utils.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/math_utils.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/memory_utils.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/text_utils.cpp">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/text_utils.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/src/utils/window_utils.h">
+			<Option target="GFXFramework"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/infra/utils.cmake">
+			<Option virtualFolder="CMake Files\infra\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/assimp-5.0/assimp-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/assimp-5.0/assimp-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/assimp-5.0/assimpTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/assimp-5.0/assimpTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/spdlog/spdlogConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\spdlog\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/spdlog/spdlogConfigTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\spdlog\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/spdlog/spdlogConfigTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\spdlog\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/danie/egc/gfx-framework/../../../../../../usr/lib/x86_64-linux-gnu/cmake/spdlog/spdlogConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\spdlog\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
