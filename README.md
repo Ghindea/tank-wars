@@ -1,7 +1,7 @@
 <img style="display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;"
+    width: 80%;"
     src="./docs/demo.png"
     alt="https://github.com/Ghindea/QR_code_beta">
 </img>
