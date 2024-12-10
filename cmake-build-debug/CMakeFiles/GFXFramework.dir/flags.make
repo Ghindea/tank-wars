@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIE   -Wall -Wextra -pedantic -Wno-error -Wno-unused-parameter 
 
 CXX_DEFINES = -DDEBUG -DGLM_FORCE_SILENT_WARNINGS -DLIBGFXC_EXPORTS -DSOLVED -DWITH_LAB_M1 -D_CRT_SECURE_NO_WARNINGS
 
-CXX_INCLUDES = -I/mnt/d/Users/danie/egc/gfx-framework/deps/api -I/mnt/d/Users/danie/egc/gfx-framework/src 
+CXX_INCLUDES = -I/mnt/d/Users/danie/Documents/GitHub/tank-wars/deps/api -I/mnt/d/Users/danie/Documents/GitHub/tank-wars/src 
 
